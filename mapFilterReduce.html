@@ -1,0 +1,35 @@
+//map function is used to transform an array
+<script>
+let arr = [5,6,7,8,9,10]
+// double 
+//triple
+//binary 
+
+// takes function as input which contains transformation logic 
+// higher order functions
+const output = arr.map((ele)=> ele *2)
+const binary = arr.map((ele) => ele.toString(2))
+console.log(output)
+console.log(binary)
+
+// ** filter **
+
+// filter out even odd numbers, divisible by 3, 
+
+const filterIsOdd = arr.filter((e) => e%2)
+const filterIsEven = arr.filter((e) => e%2 === 0)
+console.log(filterIsOdd,filterIsEven)
+const filterIndex = arr.filter((e) => e !== arr[0])
+console.log(filterIndex)
+
+// **** Reduce *** 
+// used at a place when we have to come up with single value from taking all the emelemnts in array
+ // eg : find sum or maximum number inside array
+
+ const sum = arr.reduce(function(acc,curr){
+    acc = acc +curr
+    return acc
+ },0)
+ console.log(sum)
+ 
+</script>
