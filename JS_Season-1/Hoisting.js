@@ -1,5 +1,5 @@
 /* Declaring variables before initialization
-AS JS skils through th code in memoery phase and assigns variables - undefined & function - definition
+AS JS skims through th code in memoery phase and assigns variables - undefined & function - definition
  so there is no error  */
 
  // Case 1 //

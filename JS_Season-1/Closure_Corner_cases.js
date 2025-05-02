@@ -23,7 +23,7 @@ function c(){
 }
 c()
 
-// function along with access to refeence to it's parent variables
+// function along with access to reference to it's parent variables
 // function 'a' forms a closure with scope of 'b'(parent) and 'c'(parent's parent)
 // function remembers things
 /*  *** Uses of Closure ***
@@ -31,7 +31,7 @@ c()
 2. Currying
 3. Function like once
 4. Memoize
-5.Maintaining state in 'async' world
+5. Maintaining state in 'async' world
 6. setTimeouts
 7. Iterators 
 */

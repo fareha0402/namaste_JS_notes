@@ -26,7 +26,7 @@ const calculate = (radius,logic) =>{
 const radius = [1,2,3,4];
 // calculate(radius,area);
 // calculate(radius,diameter);
-// calculate(radius,circumference);
+calculate(radius,circumference);
 /// Here - calculate is HOF which takes ara,diameter and circumference as call back functions 
 
 Array.prototype.calculatePolyfill = function(logic){

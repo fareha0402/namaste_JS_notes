@@ -1,5 +1,4 @@
 //map function is used to transform an array
-<script>
 let arr = [5,6,7,8,9,10]
 // double 
 //triple
@@ -27,9 +26,8 @@ console.log(filterIndex)
  // eg : find sum or maximum number inside array
 
  const sum = arr.reduce(function(acc,curr){
-    acc = acc +curr
+    acc = acc + curr
     return acc
  },0)
  console.log(sum)
  
-</script>

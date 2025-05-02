@@ -1,0 +1,26 @@
+1) promise.any polyfill
+2) memoization Polyfill 
+3) debounce/ throttle
+4) "abbcd* first character which in non repetitive 
+5) how do you improve react app performance
+6)react design patterns
+7) react hoc pattern use Case
+
+
+
+ Frontend System Design Jira HLD
+  React Interview Question:
+        Virtual Dom
+        Optimizing React Performance
+        React Life Cycle Methods
+
+
+
+Medibuddy:
+ LLD: Design a Javascript Library package to handle calling
+        which can be configured and handles sending events 
+            to different analytics platforms internally (like Google
+         analytics, Facebook analytics, Firebase and more).
+
+
+         https://docs.google.com/spreadsheets/d/1XT0FnhoVi-Q1XGJQSefpUNvkKaJYNxposypuXQSL348/edit?gid=458523555#gid=458523555

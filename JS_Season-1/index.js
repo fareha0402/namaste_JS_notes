@@ -20,7 +20,6 @@ const output = arr.reduce(function(acc,curr){
 },{})
 console.log(output)
 
-
 // Task 2**** Find first name of all the people whose age is less than 6
 
 const nameList = arr.filter((e)=> e.age <6).map((e) => e.firstName )

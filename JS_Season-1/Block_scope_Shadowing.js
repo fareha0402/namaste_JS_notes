@@ -18,18 +18,18 @@ if(true){
 
 /* *** Block Scope ***
 variables and functions we can access inside block */
-let b = 200 // scipt scope 
+let b = 200 // script scope 
 {
     var a = 10; // global scope
-    let b =20; // are hoisted and are inside block scope
-    const c =30; // are hoisted and are inside block scope
+    let b = 20; // are hoisted and are inside block scope
+    const c = 30; // are hoisted and are inside block scope
     console.log(a) // 10
     console.log(b)// 20
     console.log(c)
 }
 console.log(a) // global scope
 console.log(b) // script scope -200
-// console.log(c) /// error 
+ // console.log(c) /// error 
  // after execution of code ; we cannot access let and const - block scoped; var is global scope
 
  /* Shadowning && lexical scope chain
@@ -59,6 +59,5 @@ function x(){
     const c =30
 }
 x();
-
 
 // For function keyword and arrow function scope works in same manner- nothing different

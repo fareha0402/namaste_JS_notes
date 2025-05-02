@@ -1,7 +1,7 @@
 
 /*
 Are let const hoisted???
-let and const declaration are hoisted -yes 
+let and const declaration are hoisted - yes 
 they are in temporaldead zone for time being
 */
 
