@@ -1,7 +1,8 @@
 /* setTimeout uses closure - it has a callback function which forms closure with the outer scope
 so the callback function has reference to it's parent/outer function variable.
 
-SetTimeout runs the timer and when the timer expires it will call the callback function with refence to 'i'
+SetTimeout runs the timer and when the timer expires it will call the callback function
+ with refence to 'i'
 */
 
 function x(){

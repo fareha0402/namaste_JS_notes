@@ -9,7 +9,8 @@ Polyfill -
  - Native implementations of APIS can do much more and faster than polyfills.
  
  -- Polyfills is script that adds modern features to older browsers , that don't support them.
- -- Polyfills are often used alongside transpilers like Babel to convert modern code into a backward-compatible format.
+ -- Polyfills are often used alongside transpilers like Babel to convert modern code into 
+ a backward-compatible format.
 
 
 */

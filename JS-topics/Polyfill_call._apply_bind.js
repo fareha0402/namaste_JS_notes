@@ -1,5 +1,7 @@
 /* call , apply and bind function 
 call is used for function borrowing (using the context)
+sharing of methods by objects
+change the context of this for methods
 */
 
 function purchaseCall(currency,price){

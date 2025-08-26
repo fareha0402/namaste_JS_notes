@@ -15,7 +15,7 @@ So promises come into picture.
  completion (or failure) of an asynchronous operation and its resulting value."
 
  Think of a Promise as a placeholder for a value that will be available in the future. 
-  It can be in one of 3 states:
+ It can be in one of 3 states:
 
 "Pending": The task is in the initial state.
 "Fulfilled": The task was completed successfully, and the result is available.

@@ -1,6 +1,7 @@
 /* HOF -  are the functions which take functions as input and return functions as oputput*/
-/* Callback functions - are the functions that are passed as input to HOF and are called sometimes back in function definition */
-/* Functional Programming - Essence of this is to writr ur code in small small functions . which
+/* Callback functions - are the functions that are passed as input to HOF and are called 
+sometimes back in function definition */
+/* Functional Programming - Essence of this is to write ur code in small small functions . which
 helps to achieve DRY,SRP and modulariztion concepts*/
 /* Write a polyfill for map  */
 /* Write a function to calculate area, circumference and diameter of a circle using Functional Programming(HOF) */

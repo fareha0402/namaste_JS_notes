@@ -42,7 +42,6 @@ function sum(...args){
     }
     myFunc.value = ans
     return myFunc
-
 }
 
 console.log(sum(4, 6, 8, 10).value); //output - 28

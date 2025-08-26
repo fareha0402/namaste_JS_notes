@@ -22,10 +22,12 @@
  So all the task 
 
  Why we need event loop , ca n't we directly put the callback function to stack
- -- suppose there are multiple callbacks to be executed so we need to keep them in queue and once the main thread is executed
+ -- suppose there are multiple callbacks to be executed so we need to keep them in queue and 
+ once the main thread is executed
  then event loop puts the callback to main thread for execution.
 
- As microtask has more priority, suppose there are multiple callback functions in queue to be executed
+ As microtask has more priority, suppose there are multiple callback functions
+  in queue to be executed
  and callback queue is waiting for long time to get executed --- STARVATION
 */
 

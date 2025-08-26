@@ -1,9 +1,11 @@
 // JS is synchronous single threaded language 
-// when await keyworkd is hit handlePromise execution will suspend for the time it will not block the stack or main thread 
+// when await keyword is hit handlePromise execution will suspend for the time 
+// it will not block the stack or main thread.
 // after the promise is resolved after 5 secs, 
-// handlePromise function will start the execution from where it left
+// handlePromise function will start the execution from where it left.
 // then again it reaches p2 await, handlePromise will suspend and wait for promise to resolve
-// after 10 sec when promise is resolved , handlepromise func will again start execution from the line it was suspended
+// after 10 sec when promise is resolved,handlepromise func will again
+//  start execution from the line it was suspended
 const p1 = new Promise((resolve,reject) =>{
     setTimeout(() =>{
         resolve('Promise Resolved 1')

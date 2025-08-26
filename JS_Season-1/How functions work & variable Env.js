@@ -8,7 +8,7 @@ function a() {
     console.log(x)
 }
 function b() {
-    varx = 100
+    var x = 100
     console.log(x)
 }
 

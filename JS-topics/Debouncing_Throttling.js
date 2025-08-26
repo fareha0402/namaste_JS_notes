@@ -21,7 +21,7 @@ const getData = () =>{
 
 const debounce = function(fn,delay){
     let timer;
-    return function(){
+    return function(arguments){
         let context = this;
         let args = arguments;
         clearTimeout(timer)
@@ -33,3 +33,20 @@ const debounce = function(fn,delay){
 }
 // keypress function will be called on each key press
 const keypress =  debounce(getData,300)
+
+
+const throttle = function(fn,delay){
+    let lastCall =0
+    return function(args){
+        let now = new Date().getTime()
+        if(now-lastCall >= delay){
+            lastCall = now
+            fn.apply(this,args)
+        }
+    }
+}
+const handleScreen =function(){
+    //
+    
+}
+window.addEventListener('scroll',throttle(handleScreen,20000))

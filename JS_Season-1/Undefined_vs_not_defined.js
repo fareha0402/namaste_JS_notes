@@ -1,5 +1,6 @@
 /* JS code execution happens in different way
-in memory phase - Js skims throught code and assign var a placeholde(value) --> undefined (variable was not assigned any value)
+in memory phase - Js skims throught code and assign var a placeholde(value) --> 
+undefined (variable was not assigned any value)
 function is assigned define
 JS loosely typed lang/ weakly typed lang
 */

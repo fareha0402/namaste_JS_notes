@@ -20,7 +20,8 @@ const p = new Promise((resolve,reject) =>{
 })
 
 async function getData(){
-//  return 'hello' // if value is returned, it will be wrapp the value inside promise and return
+//  return 'hello' // if value is returned, it will be wrapp the value 
+// inside promise and return
 return p
 }
 

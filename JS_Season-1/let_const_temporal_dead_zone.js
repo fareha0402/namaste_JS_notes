@@ -10,7 +10,8 @@ let a = 10;
 var b = 5;
 
 // phase from hoisting till the time let variable is assigned a value - Temporal dead zone
-// when we try to access variable in TDZ it gives "Reference error" - cannot access a before initializations
+// when we try to access variable in TDZ it gives "Reference error" -
+//  cannot access a before initializations
 // let variable are also hoisted but in different space ( not in global space)
 window.b // fine
 window.a // gives error as let and const are in different space(block scoped)

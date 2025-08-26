@@ -88,7 +88,7 @@ let two = "add"
 function isAnagramsMAP(){
   let map = new Map()
   for(let i = 0; i< one.length;i++){
-    map.set(one[i],(map.get(one[i])||0) +1 )
+    map.set(one[i],(map.get(one[i])||0) +1)
   }
 
   for(let i =0;i<two.length;i++){

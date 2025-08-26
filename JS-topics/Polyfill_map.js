@@ -6,7 +6,6 @@ const transformedArr = array.map((n) => {
     return n *2
 })
 // map(callback(currentValue,indexedDB?,array?),thisargs)
-
 // polyfill for same
 
 Array.prototype.myMap = function(cb){

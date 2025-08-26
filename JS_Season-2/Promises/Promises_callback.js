@@ -3,7 +3,7 @@
  completion (or failure) of an asynchronous operation and its resulting value."
 - "placeholder untill we receive data for async operation"
 - "container for future value"
-Promise object can be exceuted/resolved only once
+Promise object can be executed/resolved only once
 immutable object
 -- Promise has 2 parts- creating and consuming
 1. Creation of Promise- pending, fullfilled and rejected states(resolve and reject functions)
@@ -34,7 +34,9 @@ checkEven
 
 
     // What is Promise
-// Promise object represents eventual completion(failure) of async operation and resulted value 
+// Promise object represents eventual completion(failure) of async operation and 
+// resulted value 
     //Why Promises are important?
-    // solves the callback helll issue, makes the code grow verticall instead of horizontal, helps error hanldling
+    // solves the callback helll issue, makes the code grow verticall instead of horizontal, 
+    // helps error hanldling
     // Promise chaining

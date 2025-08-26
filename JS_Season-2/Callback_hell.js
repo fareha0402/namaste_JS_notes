@@ -25,8 +25,9 @@ api.creatOrder(
  2. beacuse of structure it's known as ' pyramid of doom in programing '
  3. Inversion of control - IOC
  -lose control of code
-- also we give the control of program to createorder API- waiting that the create order function will call callback function
-sometime but it's risky as we dont have the control to application, imp piece to code
+- also we give the control of program to createorder API- waiting that the create order function will 
+call callback function,sometime but it's risky as we dont have the control to application,
+ imp piece to code
 -what if callback is never called or called twice, if there are bugs
 */
 

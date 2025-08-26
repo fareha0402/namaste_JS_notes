@@ -1,6 +1,7 @@
 /* Example
 What is closure
-Functions are heart of JS and have power to retain the reference of varibales and place when called
+Functions are heart of JS and have power to retain the reference of varibales and
+ place when called
 Functions as value
 Function invocation
 Closure examples
@@ -17,7 +18,8 @@ function y(){
 }
 y();
 
-// here x is forming closure - function which has access to parent's scope ( 'a' the reference to the variable) 
+// here x is forming closure - function which has access to parent's scope 
+// ( 'a' the reference to the variable) 
 
 /* Closure is a function that has access to the variables and parameters of it's outer function
 even after outer function has finished executing.
@@ -30,11 +32,10 @@ function x(){
      return function y() {
            console.log(a)
        }
-     x()
    }
    var z = x();
 console.log(z)
-/* z has a function y inside it.. suppose there are 1000 of lines and we want to call z(). 
+/* z has a function y inside it...suppose there are 1000 of lines and we want to call z(). 
 x is gone no longer exists.
 
 functions when returned from another function they maintain their lexical scope.

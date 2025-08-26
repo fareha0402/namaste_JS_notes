@@ -4,7 +4,6 @@ Async and Defer attribute in script--
 -- HTML parsing
 -- script tag are downloaded /fetched
 -- Scripts are executed when available
-    
  */
 
 <>

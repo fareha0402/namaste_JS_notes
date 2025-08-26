@@ -7,5 +7,5 @@ it has 2 components in it
 2.Code component AKA ( Thread of execution) - place where js code is executed
 
 
---- JS is SYNCHRONOUS SINGLE THREADED LANGUAGUE
+--- JS is SYNCHRONOUS SINGLE THREADED LANGUAGUE --- 
 */

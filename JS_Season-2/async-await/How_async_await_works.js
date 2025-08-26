@@ -18,7 +18,6 @@ handlePromise()
 /* Using normal fucntions - promise handling */
 function getData(){
     // JS Engine will not wait for promise to resolve - it will execute the next line
-
     p.then((res) => console.log(res))
     console.log('Namaste JS')
     }
