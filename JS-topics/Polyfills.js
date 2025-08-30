@@ -1,6 +1,7 @@
 /* 
 Polyfill -
- are the JS code or implementation, to support the features that are not supported by the older browser.
+ are the JS code or implementation, to support the features that are not supported
+  by the older browser.
  Suppose features like map,filter, Math.abs, reduce which sre part of ES6 might not work as expected in older browser
  SO polyfills helps to bridge the gap.
  Means we will write the code to make that feature work i older browser.

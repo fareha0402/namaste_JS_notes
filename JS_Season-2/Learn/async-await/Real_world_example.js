@@ -1,5 +1,6 @@
 /* using Fetch
- fetch call - gives you promise. Once resolved ,whatever data we get, it will come in readable stream.
+ fetch call - gives you promise. Once resolved ,whatever data we get, 
+ it will come in readable stream.
  returns a response with response body, which will be readable stream
  we need to cnonvert it to json ==> json value =>result 
 

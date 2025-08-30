@@ -18,35 +18,58 @@ const func= purchaseCall.bind(car,'$',30000)
 func()
 
 // Polyfill for call
-Function.prototype.myCall = function(context ={}, ...args){
-    if(typeof this !== "function"){
-        throw new Error(this + 'It is not callable')
-    }
-    context.fn = this;
-    context.fn(...args)
-}
+Function.prototype.myCall = function (context = {}, ...args) {
+  if (typeof this !== "function") {
+    throw new TypeError(this + " is not callable");
+  }
+  const fnSymbol = Symbol("fn"); // avoid overwriting
+  context[fnSymbol] = this;
 
-Function.prototype.myApply = function(context = {}, args = []){
-    if(typeof this !== 'function'){
-        throw new Error('It is not callable')
-    }
-    if(!Array.isArray(args)){
-        throw new TypeError('Its should take array as arguments')
-    }
-    context.fn = this
-    context.fn(...args)
-}
+  const result = context[fnSymbol](...args);
+
+  delete context[fnSymbol]; // cleanup
+  return result;
+};
+
+
+Function.prototype.myApply = function (context = {}, args = []) {
+  if (typeof this !== "function") {
+    throw new TypeError(this + " is not callable");
+  }
+  if (!Array.isArray(args)) {
+    throw new TypeError("Arguments must be an array");
+  }
+
+  const fnSymbol = Symbol("fn");
+  context[fnSymbol] = this;
+
+  const result = context[fnSymbol](...args);
+
+  delete context[fnSymbol];
+  return result;
+};
+
 
 // bind method 
-Function.prototype.myBind = function(context = {},...args){
-    if(typeof this !== 'function'){
-        throw new Error('cannot be bound, It is not callable')
+Function.prototype.myBind = function (context = {}, ...args) {
+  if (typeof this !== "function") {
+    throw new TypeError("Cannot bind - not callable");
+  }
+  const fn = this;
+
+  function boundFn(...newArgs) {
+    // If called with `new`, ignore provided context and use the new object
+    if (this instanceof boundFn) {
+      return fn.apply(this, [...args, ...newArgs]);
     }
-    context.fn = this;
-        return function(...myArgs){
-            return context.fn(...myArgs,...args)
-        }
-}
+    return fn.apply(context, [...args, ...newArgs]);
+  }
+
+  // Preserve prototype chain for `new`
+  boundFn.prototype = Object.create(fn.prototype);
+
+  return boundFn;
+};
 
 const callBind = purchaseCall.myBind(car)
 callBind('$',40000)

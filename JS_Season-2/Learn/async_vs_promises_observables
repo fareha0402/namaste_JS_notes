@@ -1,0 +1,48 @@
+| Feature          | Promise     | async/await     | Observable (RxJS)       |
+| ---------------- | ----------- | --------------- | ----------------------- |
+| Multiple values? | ❌ No        | ❌ No            | ✅ Yes (streams)         |
+| Cancellation?    | ❌ No        | ❌ No            | ✅ Yes (`unsubscribe()`) |
+| Built-in in JS?  | ✅ Yes       | ✅ Yes           | ❌ No (external lib)     |
+| Syntax Style     | `.then()`   | `await`         | `.subscribe()`          |
+| Usage            | All JS apps | Modern JS/React | Angular, Reactive Apps  |
+
+
+🚀 When to Use What?
+
+✅ Promise: One-time async operation (e.g., fetch data).
+
+✅ async/await: Clean syntax for working with promises.
+
+✅ Observable: Real-time data, streams, WebSockets, form control events, etc. (especially in Angular).
+
+const promise = new Promise((resolve, reject) => {
+  setTimeout(() => resolve("Done"), 1000);
+});
+
+promise.then(data => console.log(data)).catch(err => console.error(err));
+
+
+
+async function getData() {
+  try {
+    const result = await fetch("https://api.example.com/data");
+    const data = await result.json();
+    console.log(data);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+
+import { Observable } from 'rxjs';
+
+const obs = new Observable(subscriber => {
+  subscriber.next("A");
+  setTimeout(() => subscriber.next("B"), 1000);
+  setTimeout(() => subscriber.complete(), 2000);
+});
+
+obs.subscribe({
+  next: val => console.log(val),
+  complete: () => console.log("Done"),
+});
